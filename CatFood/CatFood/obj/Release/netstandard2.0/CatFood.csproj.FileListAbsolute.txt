@@ -1,0 +1,17 @@
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\bin\Release\netstandard2.0\CatFood.deps.json
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\bin\Release\netstandard2.0\CatFood.dll
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\bin\Release\netstandard2.0\ref\CatFood.dll
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\bin\Release\netstandard2.0\CatFood.pdb
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\obj\Release\netstandard2.0\CatFood.csprojAssemblyReference.cache
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\obj\Release\netstandard2.0\FontSizePages.xaml.g.cs
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\obj\Release\netstandard2.0\Pages\DayInfo.xaml.g.cs
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\obj\Release\netstandard2.0\Pages\Days.xaml.g.cs
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\obj\Release\netstandard2.0\Pages\MainPage.xaml.g.cs
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\obj\Release\netstandard2.0\CatFood.AssemblyInfoInputs.cache
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\obj\Release\netstandard2.0\CatFood.AssemblyInfo.cs
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\obj\Release\netstandard2.0\CatFood.csproj.CoreCompileInputs.cache
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\obj\Release\netstandard2.0\CatFood.dll
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\obj\Release\netstandard2.0\ref\CatFood.dll
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood\obj\Release\netstandard2.0\CatFood.pdb

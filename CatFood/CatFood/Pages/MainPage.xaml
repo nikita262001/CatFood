@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CatFood.MainPage">
+
+    <Grid>
+        <AbsoluteLayout x:Name="absolute">
+
+            <Label x:Name="labelDate" TextColor="Black" FontAttributes ="Bold" FontFamily="Times New Roman"  
+               AbsoluteLayout.LayoutBounds="0.1,0.05" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Label x:Name="labelClock" TextColor="Black" FontAttributes ="Bold" FontFamily="Times New Roman" 
+                AbsoluteLayout.LayoutBounds="0.5,0.04" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Label x:Name="labelClockPassed" TextColor="Black" FontAttributes ="Bold" FontFamily="Times New Roman" 
+                AbsoluteLayout.LayoutBounds="0.5,0.39" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Button x:Name="buttonClick" FontAttributes ="Bold" Text="Показать все дни" FontFamily="Times New Roman" Clicked="ButtonClick_Clicked"
+                AbsoluteLayout.LayoutBounds="0.95,0.05" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <!--<Button x:Name="newDayTest" FontAttributes ="Bold" Text="Новый день" FontFamily="Times New Roman" Clicked="TestDay"/>-->
+
+            <Button x:Name="buttonFeed" FontAttributes ="Bold" Text="КОРМИТЬ" FontFamily="Times New Roman" Clicked="ButtonFeed_Clicked"
+                AbsoluteLayout.LayoutBounds="0.5,0.20,0.3,0.2" AbsoluteLayout.LayoutFlags="All"/>
+
+            <Button x:Name="minusHour" TextColor="Black" FontAttributes ="Italic" Text="-1 Час" FontFamily="Times New Roman" Clicked="ButtonMinusHour_Clicked"
+                AbsoluteLayout.LayoutBounds="0.02,0.18,0.16,0.12" AbsoluteLayout.LayoutFlags="All"/>
+
+            <Button x:Name="plusHour" TextColor="Black" FontAttributes ="Italic" Text="+1 Час" FontFamily="Times New Roman" Clicked="ButtonPlusHour_Clicked"
+                AbsoluteLayout.LayoutBounds="0.215,0.18,0.16,0.12" AbsoluteLayout.LayoutFlags="All"/>
+
+            <Button x:Name="deleteLast"  TextColor="Black" FontAttributes ="Bold" Text="Удалить последнюю запись" FontFamily="Times New Roman" Clicked="ButtonRemove"
+                AbsoluteLayout.LayoutBounds="0.02,0.33,0.33,0.16" AbsoluteLayout.LayoutFlags="All"/>
+
+            <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.075,0.9,0.68,0.5">
+                <StackLayout x:Name="stackClockDay"/>
+            </ScrollView>
+
+            <Grid x:Name="stackFood" Padding="10"
+                     AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.95,0.65,0.25,0.7">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="labelVisible1" Text="✓" FontAttributes ="Italic" TextColor="Green" Grid.Column="0" Grid.Row="0" IsVisible="true"></Label>
+                <Label x:Name="labelVisible2" Text="✓" FontAttributes ="Italic" TextColor="Green" Grid.Column="0" Grid.Row="1" IsVisible="false"></Label>
+                <Label x:Name="labelVisible3" Text="✓" FontAttributes ="Italic" TextColor="Green" Grid.Column="0" Grid.Row="2" IsVisible="false"></Label>
+                <Label x:Name="labelVisible4" Text="✓" FontAttributes ="Italic" TextColor="Green" Grid.Column="0" Grid.Row="3" IsVisible="false"></Label>
+                <Label x:Name="labelVisible5" Text="✓" FontAttributes ="Italic" TextColor="Green" Grid.Column="0" Grid.Row="4" IsVisible="false"></Label>
+                <Label x:Name="labelVisible6" Text="✓" FontAttributes ="Italic" TextColor="Green" Grid.Column="0" Grid.Row="5" IsVisible="false"></Label>
+
+                <Label x:Name="labelFood1" TextColor="Black" FontFamily="Times New Roman" FontAttributes ="Italic"  Text="Кит. 0.5" Grid.Column="1" Grid.Row="0"></Label>
+                <Label x:Name="labelFood2" TextColor="Black" FontFamily="Times New Roman" FontAttributes ="Italic"  Text="Кит. 1" Grid.Column="1" Grid.Row="1"></Label>
+                <Label x:Name="labelFood3" TextColor="Black" FontFamily="Times New Roman" FontAttributes ="Italic"  Text="Рыба" Grid.Column="1" Grid.Row="2"></Label>
+                <Label x:Name="labelFood4" TextColor="Black" FontFamily="Times New Roman" FontAttributes ="Italic"  Text="Мясо" Grid.Column="1" Grid.Row="3"></Label>
+                <Label x:Name="labelFood5" TextColor="Black" FontFamily="Times New Roman" FontAttributes ="Italic"  Text="Сух. корм" Grid.Column="1" Grid.Row="4"></Label>
+                <Entry x:Name="labelFood6" TextColor="Black" FontFamily="Times New Roman" FontAttributes ="Italic"  Placeholder="Другое" Grid.Column="1" Grid.Row="5" Focused="Entry_Focused"></Entry>
+
+                <Button Grid.ColumnSpan="2" Grid.Row="0" Clicked="Button_Clicked_1" BackgroundColor="Transparent"></Button>
+                <Button Grid.ColumnSpan="2" Grid.Row="1" Clicked="Button_Clicked_2" BackgroundColor="Transparent"></Button>
+                <Button Grid.ColumnSpan="2" Grid.Row="2" Clicked="Button_Clicked_3" BackgroundColor="Transparent"></Button>
+                <Button Grid.ColumnSpan="2" Grid.Row="3" Clicked="Button_Clicked_4" BackgroundColor="Transparent"></Button>
+                <Button Grid.ColumnSpan="2" Grid.Row="4" Clicked="Button_Clicked_5" BackgroundColor="Transparent"></Button>
+            </Grid>
+        </AbsoluteLayout>
+        
+        <Grid x:Name="gridMinBattery" IsVisible="false" BackgroundColor="Red" Opacity="0.9"/>
+
+        <Label x:Name="labelMinBattery" IsVisible="false" Text="Подключите планшет к USB" HorizontalOptions="Center" VerticalOptions="Center" FontSize="45" TextColor="Black"/>
+
+        <Grid x:Name="gridMaxBattery" IsVisible="false" BackgroundColor="Green" Opacity="0.9"/>
+
+        <Label x:Name="labelMaxBattery" IsVisible="false" Text="Отключите планшет от USB" HorizontalOptions="Center" VerticalOptions="Center" FontSize="45" TextColor="Black"/>
+    </Grid>
+</ContentPage>

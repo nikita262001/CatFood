@@ -1,0 +1,1 @@
+C:\Users\nikit\Downloads\CatFood-master\CatFood\CatFood.UWP\CatFood.UWP.csproj;x86
